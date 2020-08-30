@@ -1,0 +1,170 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+$body-color: #fff;
+$bgcolor: #f4f4f8;
+$textcolor: #29275f;
+$std-red: #f64b53;
+$footer-color: #343279;
+$bottom-footer: #1d1c36;
+
+
+body {
+  background-color: $body-color;
+  color: $textcolor;
+  margin: 0;
+  font-family: "adobe-clean", sans-serif;
+  font-size: 0.75rem;
+  }
+  html {
+    overflow:   scroll;
+    scroll-behavior: smooth;
+  }
+  .scroll_disable::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+  }
+  .header-right{
+    margin-right:8vw;
+  }
+  .header-left{
+    margin-left:4vw;
+  }
+  section{ 
+    margin-bottom: 100px;
+  }
+  .blue_background{
+    background-color: $bgcolor;
+  }
+  .content_align{
+    margin-left: 29vw;
+  }
+  #build_block_desc2{
+    margin-left: 100px;
+  }
+  .header {
+    padding: 16px 16px;
+    background: $body-color;
+    color: $std-red;
+  }
+  h4, button {
+
+      display: inline-block;
+  }
+  .btn-success{
+    background-color: $std-red;
+    border-color: $std-red;
+  }
+  
+  .content {
+    margin: 20px 70px 0px 29vw;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+.sidenav::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidenav::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+.sidenav::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+  .sidenav {
+    width: 20vw;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 80px;
+    background: $body-color;
+    padding: 8px 0;
+    border-radius: 3px;
+    height: 70vh;
+    overflow: auto;
+  }
+
+  .btn-primary-outline{
+    background-color: transparent;
+    border-color: $body-color;
+    float:right;
+    color:$body-color;
+  }
+  .sidenav .side-heading{
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: $textcolor;
+    display: block;
+    font-weight: bold;
+  }
+  .sidenav .side-content{
+    font-size: 0.75rem;
+    color: $textcolor;
+    display: block;
+    text-decoration: none;
+    margin-top:3px;
+  }
+  
+  .sidenav a:hover {
+    color: #201c8e;
+  }
+  .footer-content, .btn-primary-outline , .bottom-footer-left, .bottom-footer-right{
+    display: inline-block;
+  }
+  .footer-content {
+    font-size:1.1rem;
+    width:29vw;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 11vh;
+    background-color: $bottom-footer;
+    color: white;
+ }
+  .bottom-footer-left{
+margin:10px 0 0 8vw;
+font-size:1.1rem;
+letter-spacing: 3px;
+  }
+  .bottom-footer-right{
+    float:right;
+    font-size:0.6rem;
+    margin:10px 4vw 0 0;
+  }
+  .icon_color , #org_chart{
+    color:$textcolor;
+    display:inline-block;
+  }
+  .icon_color{
+    font-size: 20px;
+  }
+  #org_chart{
+    margin-left:10px;
+  }
+  .bottom-footer{
+    background-color: $footer-color;
+    height:14vh;
+    color:$body-color;
+  }
+  .mainpage-heading {
+    margin-top: 40px;
+  }
