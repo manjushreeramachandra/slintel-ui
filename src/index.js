@@ -31,11 +31,4 @@ for (let key in json){
       fixHeader();
     };
 
-    addEventListener('click', function (ev) {
-console.log(ev)
-      if (ev.target.classList.contains('#')) {
-          ev.preventDefault();
-      }   
-  });
-
 
